@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Eat that Burger!!!</h1>
+            <p class="lead"></p>
+        </div>
+    </div>
+    <div class="card">
+        <h2 class="card-body"> Uneaten Burgers</h2>
+        <ul class="list-group">
+            {{#each burgers}}
+            <li class="list-group-item">ID#{{this.id}}: {{this.burger_name}}</li>
+            {{/each}}
+        </ul>
+
+    </div>
+    <br>
+    <div class="card">
+        <div class="card-body">
+            <h2>Add Burger</h2>
+            <form class="create form">
+                <div class="form-group">
+                    <label for="addBurger">Add any Burger: </label>
+                    <input type="text" id="addBurger" name="name">
+                </div>
+
+                <button type="submit">Add Burger</button>
+            </form>
+        </div>
+
+    </div>
+</div>
